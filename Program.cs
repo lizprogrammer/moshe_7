@@ -59,7 +59,7 @@ namespace Section7
             Console.Write("Please enter a few numbers separated by a hyphen: ");
             string MyString = Console.ReadLine();
             
-            string[] Values = MyString.Split(',');
+            string[] Values = MyString.Split('-');
             
             if(Values.Length <= 1)
             {
