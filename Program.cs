@@ -49,25 +49,6 @@ namespace Section7
         return true;
     }
     
-            /// Determines if string array is sorted from A -> Z
-    public static bool IsSorted(string[] Values)
-    {
-        // Overload the function to take an array of strings
-        string TempString;
-        for (int i = 1; i < Values.Length; i++)
-        {
-            if (Values[i - 1].CompareTo(Values[i]) > 0) // If previous is bigger, switch
-            {
-                No();
-                TempString = Values[i - 1];
-                Values[i - 1] = Values[i];
-                Values[i] = TempString;
-                //return false;
-            }
-        }
-        Yo();
-        return Values;
-    }
     
         //     2- Write a program and ask the user to enter a few numbers separated by a hyphen. 
         // If the user simply presses Enter, without supplying an input, exit immediately; 
@@ -80,8 +61,29 @@ namespace Section7
             
             string[] Values = MyString.Split(',');
             
-            string[] SortedString = IsSorted(Values);
+            if(Values.Length <= 1)
+            {
+                Console.WriteLine("Try Again");
+                CheckForDuplicates();
+            }
             
+            Array.Sort(Values);
+            
+            Console.Write(String.Format("{0} ", Values[0]));
+            
+            for (int i = 1; i < Values.Length; i++)
+            {
+                if (Values[i - 1].CompareTo(Values[i]) == 0) // If same, ignore
+                {
+                // do nothing
+                 //Console.Write(String.Format("Same {0} ", Values[i]));
+                }
+                else
+                {
+                    Console.Write(String.Format("{0} ", Values[i]));
+                }
+            }
+            Console.WriteLine();
             return 0;
         }
 /*
