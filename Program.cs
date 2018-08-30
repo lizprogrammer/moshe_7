@@ -11,7 +11,8 @@ namespace Section7
             //IsSorted();
             //CheckForDuplicates();
             //ValidateTime();
-            PascalCase();
+            //PascalCase();
+            CountTheVowels();
 
         }
 
@@ -139,26 +140,58 @@ namespace Section7
         return 0;
     }
         
+
+    // 5- Write a program and ask the user to enter an English word. Count the number of 
+    // vowels (a, e, o, u, i) in the word. So, if the user enters "inadequate", the program 
+    // should display 6 on the console.        
+    static int CountTheVowels()
+    {
+            Console.Write("Please enter an English word: ");
+            string MyString = Console.ReadLine();
+            
+            
+            string[] Values = MyString.Split(' ');
+            string FirstWord = Values[0];
+            int LastIndex = FirstWord.Length - 1;
+            
+            int VowelCount = 0;
+            
+            if(FirstWord.Length == 0)
+            {
+                Console.WriteLine("Try again!");
+                CountTheVowels();
+            }
+            else
+            {
+                if(FirstWord[LastIndex] == 'y')
+                    VowelCount++; 
+                    
+                foreach(char Letter in FirstWord)
+                {
+                    if(Letter == 'a' || Letter == 'e' || Letter == 'i' || Letter == 'o' || Letter == 'u')
+                    {
+                        VowelCount++;
+                        //Console.Write(String.Format("{0} ", Letter));
+                    }    
+                }
+                
+            if(VowelCount == 1)
+                Console.WriteLine(String.Format("There is {0} vowel.", VowelCount));
+            else if(VowelCount == 0)
+                Console.WriteLine(String.Format("There are no vowels.", VowelCount));
+            else
+                Console.WriteLine(String.Format("There are {0} vowels.", VowelCount));
+            
+            }    
+            
+
+            
+            return 0;
+    }
         
 /*
 Note: For all these exercises, ignore input validation unless otherwise specified. 
 Assume the user provides input in the format that the program expects. 
-
-
-
-
-
-
-
-4- Write a program and ask the user to enter a few words separated by a space. Use 
-the words to create a variable name with PascalCase. For example, if the user types: 
-"number of students", display "NumberOfStudents". Make sure that the program is not 
-dependent on the input. So, if the user types "NUMBER OF STUDENTS", the program should 
-still display "NumberOfStudents".
-
-5- Write a program and ask the user to enter an English word. Count the number of 
-vowels (a, e, o, u, i) in the word. So, if the user enters "inadequate", the program 
-should display 6 on the console.
 
 */
     }
