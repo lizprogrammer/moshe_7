@@ -572,10 +572,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ubuntu/workspace/Section7/Section7.csproj",
-      "projectName": "Section7",
-      "projectPath": "/home/ubuntu/workspace/Section7/Section7.csproj",
-      "outputPath": "/home/ubuntu/workspace/Section7/obj/",
+      "projectUniqueName": "/home/ubuntu/workspace/Section8/Section8.csproj",
+      "projectName": "Section8",
+      "projectPath": "/home/ubuntu/workspace/Section8/Section8.csproj",
+      "outputPath": "/home/ubuntu/workspace/Section8/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp2.0"

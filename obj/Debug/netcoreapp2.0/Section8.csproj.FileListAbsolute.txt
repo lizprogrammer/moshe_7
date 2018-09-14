@@ -1,0 +1,9 @@
+/home/ubuntu/workspace/Section8/bin/Debug/netcoreapp2.0/Section8.deps.json
+/home/ubuntu/workspace/Section8/bin/Debug/netcoreapp2.0/Section8.runtimeconfig.json
+/home/ubuntu/workspace/Section8/bin/Debug/netcoreapp2.0/Section8.runtimeconfig.dev.json
+/home/ubuntu/workspace/Section8/bin/Debug/netcoreapp2.0/Section8.dll
+/home/ubuntu/workspace/Section8/bin/Debug/netcoreapp2.0/Section8.pdb
+/home/ubuntu/workspace/Section8/obj/Debug/netcoreapp2.0/Section8.csproj.CoreCompileInputs.cache
+/home/ubuntu/workspace/Section8/obj/Debug/netcoreapp2.0/Section8.AssemblyInfo.cs
+/home/ubuntu/workspace/Section8/obj/Debug/netcoreapp2.0/Section8.dll
+/home/ubuntu/workspace/Section8/obj/Debug/netcoreapp2.0/Section8.pdb
